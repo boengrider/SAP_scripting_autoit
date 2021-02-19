@@ -374,7 +374,7 @@ Func PostWork(ByRef $_hwndExpWindow, ByRef $_oSES, ByRef $_dictReport, $_sAdmins
 	If UBound($__aSharepointIDs) = 0 Then
 		; do not copy to sharepoint
 	Else
-		$__sSecurityToken = SPGetSecurityToken($_oHTTP, "volvogroup.sharepoint.com", $__aSharepointIDs[1], $__aSharepointIDs[2], "462ad7ed-2e5e-4175-b808-18c6f33fadd7","dWHEl4AMp8qHX/oxeFcY4RyFJJRD7z1cIavjDH53yIE=")
+		$__sSecurityToken = SPGetSecurityToken($_oHTTP, "volvogroup.sharepoint.com", $__aSharepointIDs[1], $__aSharepointIDs[2], "462ad7ed-2e5e-XXXX-XXXX-18c6f33fadd7","dWHEl4AMp8XXXXXXXXXFJJRD7z1cIavjDH53yIE=")
 		If $__sSecurityToken = 1 Then
 			; do not copy. Can't get security token
 		Else
